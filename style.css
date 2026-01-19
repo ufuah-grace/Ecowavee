@@ -1,0 +1,1286 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #4CAF50;
+        color: black;
+        padding: 0px 0px;
+        text-align: end;
+    }
+
+/* logo */
+     .logo {
+        display: flex;
+        align-items: flex-end;
+       
+       
+    }
+
+     img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 13px;
+    }
+
+    .logo h1{
+        margin-left: 20px;
+        color: #333;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    
+        
+    }
+ /* contact heading */
+ /* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 0px;
+  width: 50px;
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  background-color: black;
+  margin-right: 90px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.wrapper .icon {
+  position: relative;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+    /* Container styling */
+    /* nav bar */
+nav {
+    background: rgba(255, 255, 255, 0.1); 
+    background-color: #f4f4f4;
+    backdrop-filter: blur(10px);        
+    padding: 1rem 2rem;               
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* List styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link styling */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    position: relative; /* Necessary for the underline effect */
+    transition: color 0.3s ease;
+}
+
+/* The Animated Underline Effect */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black; /* Change to your brand color */
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:#4CAF50 ;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expands the line on hover */
+}
+    
+    nav ul li {
+        display: inline;
+        margin: 0px 19px;
+    }
+   
+
+/* hero image */
+    /* Update your .hero class */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white; /* Changed to white to match your text */
+    text-align: center;
+    padding-top: 200px;
+    
+    /* Link the animation here */
+    animation: slideShow 13s infinite; 
+}
+
+/* Define the slideshow animation */
+@keyframes slideShow {
+    0%, 20% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('WEBIMAGE.png');
+    }
+    21%, 40% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('kitchenimage1.jpeg');
+    }
+    41%, 80% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('kitchenimage2.jpeg');
+    }
+    81%, 100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('kitchenimage4.jpeg');
+    }
+}
+    
+    .hero h1 {
+        font-size: 90px;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:white ;
+    }
+
+    .hero h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:white
+    }
+
+    .btn {
+  /* Basic Shape & Layout */
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none; /* Removes the underline */
+  border-radius: 5px;    /* Rounds the corners */
+  
+  /* Colors & Text */
+  background-color:#4CAF50  ;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+  /* Smooth transition for hover effects */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+/*delivery section*/
+.delivery {
+    background-color:#4CAF50;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.delivery h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* shop */
+.shop {
+    text-align: center;
+    padding: 100px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+
+.see {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+     
+    .btnn  {
+  /* Basic Shape & Layout */
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none; /* Removes the underline */
+  border-radius: 5px;    /* Rounds the corners */
+  
+  /* Colors & Text */
+  background-color:#4CAF50  ;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+  /* Smooth transition for hover effects */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.btnn:hover {
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+
+/* category item */
+.category-section {
+    .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 45px;
+    justify-items: center;
+}
+    }
+.category-item {
+background: white;
+padding: 25px 10px;
+width: 150px;
+border-radius: 12px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+transition: transform .3s ease, box-shadow .3s ease;
+cursor: pointer;
+animation: bounceIn .8s ease;
+}
+
+
+.category-item:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.category-icon {
+font-size: 40px;
+color: #4CAF50;
+margin-bottom: 10px;
+animation: pop .5s ease;
+}
+
+
+.category-item p {
+font-size: 16px;
+color: #444;
+margin: 0;
+}
+
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes pop {
+0% { transform: scale(0.6); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+}
+
+
+@keyframes bounceIn {
+0% { transform: scale(0.7); opacity: 0; }
+60% { transform: scale(1.05); opacity: 1; }
+100% { transform: scale(1); }
+}
+
+
+@media (max-width: 600px) {
+.category-item {
+width: 130px;
+}
+}
+
+/* about us */
+.about-us {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 30px;
+        justify-items: center;
+        background-color: #444;
+        padding: 90px;
+        margin: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    
+    .about-us img {
+        width: 500px;
+        height: auto;
+    }
+
+    .about-us h2{
+        align-content: center;
+        text-align: center;
+    }
+    .about-us p{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-list {
+    list-style: none;
+    text-align: center;
+    margin-left: 250px;
+    height: auto;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 5px;
+    justify-items: center;
+
+}
+
+.about-list li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ 
+.about-list li span {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.about-list h4 {
+    font-size: 18px;
+    color: #225522;
+}
+
+.about-list p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+@media (max-width: 850px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-list li {
+        justify-content: center;
+       
+    }
+}
+
+/* services */
+     .services {
+        padding: 90px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .grace {
+    margin-left: 450px;
+    width: 300px;
+    height: auto;
+}
+    .me {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+  /* testimonial   */
+  /* Container Styles */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    color: #777;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Grid Layout */
+.testimonial-wrapper {
+    display: grid;
+    /* This creates a responsive grid that fits as many columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.testimonial-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease; /* Smooth transition for hover */
+    text-align: left;
+    border: 1px solid #eee;
+    cursor: default;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: #4CAF50; /* Optional: change border color on hover */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #4CAF50;
+}
+
+.profile h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+/* Review Text */
+.review {
+    line-height: 1.6;
+    color: #555;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* Optional: Add a quote mark icon via CSS */
+.review::before {
+    content: '"';
+    font-family: serif;
+    font-size: 3rem;
+    color:#4CAF50;
+    opacity: 0.1;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+
+.sub-text {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+
+/* contact us */
+/* Keep the base styles from before... */
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container styling */
+.contact-us {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-us h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form layout */
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input & Textarea styling */
+.contact-us input, 
+.contact-us textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-us textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Focus state for a premium feel */
+.contact-us input:focus, 
+.contact-us textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Button styling */
+.contact-us button, 
+.contact-us input[type="submit"] {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us button:hover, 
+.contact-us input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+/* Layout Strategy */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 40px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Image Styling & Effects */
+.contact-image {
+    overflow: hidden; /* Keeps the zoom effect contained */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-image img {
+    width: auto;
+    display: block;
+    transition: transform 0.5s ease; /* Smooth transition for effect */
+    height: 450px;
+}
+
+/* Effect: Zoom on Hover */
+.contact-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+.form-group input, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Effect: Focus Glow */
+.form-group input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack on top of each other on mobile */
+    }
+}
+
+/* The magic: Side-by-side on screens wider than 600px */
+@media (min-width: 600px) {
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 20px; /* Space between Name and Email */
+    }
+}
+
+/* Ensure inputs take full width of their containers */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box; /* Prevents padding from breaking width */
+}
+
+/* footer */
+/* Footer Background and Text */
+.main-footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Layout Grid */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Typography */
+.footer-col h4 {
+  color: #f4f4f4;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  color: #bbbbbb;
+  font-size: 0.95rem;
+}
+
+/* Links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+/* Newsletter Input */
+.newsletter-form {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Change to your brand color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.footer-bottom a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* an imported css */
+/* From Uiverse.io by ahmed150up2 */
+.card {
+  display: flex;
+  height: 70px;
+  width: 270px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background-color: greenyellow;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: greenyellow;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: greenyellow;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background-color: greenyellow;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* MOBILE RESPONSIVE - MAX WIDTH 440px */
+@media (max-width: 440px) {
+  /* BODY & GENERAL */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* HEADER */
+  header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    order: 1;
+    margin-right: auto;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px 0 0;
+  }
+
+  .logo h1 {
+    margin-left: 5px;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header-actions {
+    order: 2;
+    flex-direction: row;
+    gap: 8px;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .header-actions input {
+    display: none;
+  }
+
+  .header-actions button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    width: auto;
+  }
+
+  /* WRAPPER (SOCIAL ICONS) */
+  .wrapper {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .wrapper .icon {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: 350px;
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .hero h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* DELIVERY SECTION */
+  .delivery {
+    padding: 8px;
+    margin: 3px 0;
+  }
+
+  .delivery h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* SHOP SECTION */
+  .shop {
+    padding: 30px 15px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .shop h2 {
+    font-size: 1.5rem;
+  }
+
+  .shop p {
+    font-size: 0.9rem;
+  }
+
+  .see {
+    margin-top: 15px;
+  }
+
+  .btnn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* CATEGORY SECTION */
+  .category-section .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .category-item {
+    width: 100%;
+    padding: 15px 8px;
+  }
+
+  .category-icon {
+    font-size: 28px;
+  }
+
+  .category-item p {
+    font-size: 0.9rem;
+  }
+
+  /* ABOUT US SECTION */
+  .about-us {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 30px 15px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .about-us img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .about-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .about-us p {
+    font-size: 0.9rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .about-list li {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .about-list li span {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+
+  .about-list h4 {
+    font-size: 1rem;
+  }
+
+  .about-list p {
+    font-size: 0.85rem;
+  }
+
+  /* SERVICES SECTION */
+  .services {
+    padding: 30px 15px;
+    margin: 10px;
+  }
+
+  .grace {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .me {
+    margin-top: 20px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 30px 15px;
+  }
+
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-wrapper {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile h3 {
+    font-size: 1rem;
+  }
+
+  .review {
+    font-size: 0.9rem;
+  }
+
+  /* CONTACT US */
+  .contact-us {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .contact-us h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-us input,
+  .contact-us textarea {
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+
+  .contact-us textarea {
+    min-height: 100px;
+  }
+
+  .contact-us button,
+  .contact-us input[type="submit"] {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-image img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* FOOTER */
+  .main-footer {
+    padding: 30px 15px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+
+  .footer-col h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-col p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-col ul li a {
+    font-size: 0.85rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input {
+    padding: 10px;
+  }
+
+  .newsletter-form button {
+    padding: 10px 15px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 0.8rem;
+  }
+
+  /* SOCIAL CARD */
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 270px;
+    height: 60px;
+  }
+
+  .card svg {
+    font-size: 18px;
+  }
+
+  .card .social-link1,
+  .card .social-link2,
+  .card .social-link3,
+  .card .social-link4 {
+    font-size: 18px;
+  }
+}

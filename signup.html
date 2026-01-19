@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - KitchenPro</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-card">
+            <h2>Create Your Account</h2>
+            <p class="subtitle">Join KitchenPro and start shopping premium kitchen essentials</p>
+
+            <form id="signupForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password (min 8 characters)" required minlength="8">
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-enter your password" required minlength="8">
+                </div>
+
+                <div class="input-group checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms" style="display: inline; margin-left: 6px;">I agree to the Terms & Conditions</label>
+                </div>
+
+                <button type="submit" class="primary-btn">Create Account</button>
+            </form>
+
+            <p class="switch-text">
+                Already have an account?
+                <a href="sign.html" class="link-btn">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const inputs = this.querySelectorAll('input');
+            const password = inputs[2].value;
+            const confirmPassword = inputs[3].value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            // Show success message
+            alert('Account created successfully! Welcome to KitchenPro.');
+            
+            // Redirect to order page or homepage
+            window.location.href = 'order.html';
+        });
+    </script>
+</body>
+</html>
