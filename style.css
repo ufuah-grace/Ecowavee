@@ -930,11 +930,13 @@ input, textarea {
 
   /* HEADER */
   header {
-    padding: 10px 15px;
+    padding: 12px 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
   }
 
   .logo {
@@ -943,30 +945,76 @@ input, textarea {
     justify-content: flex-start;
     order: 1;
     margin-right: auto;
+    display: flex;
   }
 
   img {
     width: 40px;
     height: 40px;
-    margin: 0 8px 0 0;
+    margin: 0 10px 0 0;
   }
 
   .logo h1 {
-    margin-left: 5px;
+    margin-left: 0;
     margin-top: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
   }
 
   nav {
-    display: none;
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding: 12px 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow-x: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #4CAF50;
   }
 
   .header-actions {
     order: 2;
     flex-direction: row;
-    gap: 8px;
+    gap: 10px;
     width: auto;
     margin-left: 0;
+    display: flex;
   }
 
   .header-actions input {
@@ -974,9 +1022,11 @@ input, textarea {
   }
 
   .header-actions button {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    padding: 10px 14px;
+    font-size: 0.85rem;
     width: auto;
+    font-weight: 500;
+    border-radius: 6px;
   }
 
   /* WRAPPER (SOCIAL ICONS) */
